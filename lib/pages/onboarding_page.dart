@@ -1,3 +1,4 @@
+import 'package:arivu/pages/landing.dart';
 import 'package:flutter/material.dart';
 import 'package:arivu/pages/all_tasks_page.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
@@ -56,7 +57,8 @@ class _OnboardingPageState extends State<OnboardingPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    if (index > 0) // Show the previous button only if not on the first page
+                    if (index >
+                        0) // Show the previous button only if not on the first page
                       ElevatedButton(
                         onPressed: () {
                           _pageController.previousPage(
@@ -66,13 +68,14 @@ class _OnboardingPageState extends State<OnboardingPage> {
                         },
                         child: Text('Previous'),
                       ),
-                    if (index > 0) SizedBox(width: 16), // Add spacing between buttons
+                    if (index > 0)
+                      SizedBox(width: 16), // Add spacing between buttons
                     ElevatedButton(
                       onPressed: () {
                         if (index == _pages.length - 1) {
                           Navigator.pushReplacement(
                             context,
-                            MaterialPageRoute(builder: (context) => AllTasksPage()),
+                            MaterialPageRoute(builder: (context) => Landing()),
                           );
                         } else {
                           _pageController.nextPage(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:arivu/data/database.dart';
-import 'package:arivu/pages/dashboard_page.dart';
+import 'package:arivu/pages/landing.dart';
 import 'package:arivu/pages/onboarding_page.dart';
 
 class OnboardingFormPage extends StatefulWidget {
@@ -153,7 +153,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: isOnboardingComplete ? DashboardPage() : OnboardingFormPage(),
+      home: isOnboardingComplete ? Landing() : OnboardingFormPage(),
     );
   }
 }

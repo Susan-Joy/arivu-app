@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:arivu/data/database.dart';
-import 'package:arivu/pages/dashboard_page.dart';
+import 'package:arivu/pages/landing.dart';
 import 'onboarding_page.dart'; // Correct import for your onboarding page
 
 class OnboardingFormPage extends StatefulWidget {
@@ -32,7 +32,9 @@ class _OnboardingFormPageState extends State<OnboardingFormPage> {
 
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => OnboardingPage()), // Navigate to OnboardingPage
+        MaterialPageRoute(
+            builder: (context) =>
+                OnboardingPage()), // Navigate to OnboardingPage
       );
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
@@ -105,7 +107,6 @@ void main() async {
   final isOnboardingComplete = db.isOnboardingComplete();
 
   runApp(MaterialApp(
-    home: isOnboardingComplete ? DashboardPage() : OnboardingFormPage(),
+    home: isOnboardingComplete ? Landing() : OnboardingFormPage(),
   ));
 }
-
