@@ -36,7 +36,11 @@ class _LandingState extends State<Landing> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Dashboard'),
+        elevation: 4,
+        title: Text(
+          'Arivu ✨',
+          style: TextStyle(fontSize: 35, fontWeight: FontWeight.bold),
+        ),
       ),
       body: _pages[_selectedIndex],
       backgroundColor: Colors.grey[300],
