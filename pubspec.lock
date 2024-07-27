@@ -17,6 +17,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "6.4.1"
+  animate_do:
+    dependency: "direct main"
+    description:
+      name: animate_do
+      sha256: "7a3162729f0ea042f9dd84da217c5bde5472ad9cef644079929d4304a5dc4ca0"
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.3.4"
   args:
     dependency: transitive
     description:
@@ -235,6 +243,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  flutter_tts:
+    dependency: "direct main"
+    description:
+      name: flutter_tts
+      sha256: cbb3fd43b946e62398560235469e6113e4fe26c40eab1b7cb5e7c417503fb3a8
+      url: "https://pub.dev"
+    source: hosted
+    version: "3.8.5"
   flutter_web_plugins:
     dependency: transitive
     description: flutter
@@ -296,6 +312,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.1"
+  http:
+    dependency: "direct main"
+    description:
+      name: http
+      sha256: "5895291c13fa8a3bd82e76d5627f69e0d85ca6a30dcac95c4ea19a5d555879c2"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.13.6"
   http_multi_server:
     dependency: transitive
     description:
@@ -480,6 +504,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.3.0"
+  pedantic:
+    dependency: transitive
+    description:
+      name: pedantic
+      sha256: "67fc27ed9639506c856c840ccce7594d0bdcd91bc8d53d6e52359449a1d50602"
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.11.1"
   platform:
     dependency: transitive
     description:
@@ -637,6 +669,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.10.0"
+  speech_to_text:
+    dependency: "direct main"
+    description:
+      name: speech_to_text
+      sha256: "97425fd8cc60424061a0584b6c418c0eedab5201cc5e96ef15a946d7fab7b9b7"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.6.2"
+  speech_to_text_macos:
+    dependency: transitive
+    description:
+      name: speech_to_text_macos
+      sha256: e685750f7542fcaa087a5396ee471e727ec648bf681f4da83c84d086322173f6
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.1.0"
+  speech_to_text_platform_interface:
+    dependency: transitive
+    description:
+      name: speech_to_text_platform_interface
+      sha256: a0df1a907091ea09880077dc25aae02af9f79811264e6e97ddb08639b7f771c2
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.2.0"
   stack_trace:
     dependency: transitive
     description:
